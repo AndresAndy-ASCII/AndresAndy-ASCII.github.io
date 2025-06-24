@@ -1,0 +1,9 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* Ajuste Color Columna Izquierda */
+/* !Important Sirve para priorizar un estilo sobre otro */
+.bg-primary{
+    background-color: #2c3e50 !important;
+}
