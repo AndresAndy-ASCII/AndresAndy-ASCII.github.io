@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #25d366; /* Color de WhatsApp */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.directory-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    color: #075e54; /* Un verde oscuro */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+li a:hover {
+    background-color: #e6f7ee; /* Fondo suave al pasar el ratón */
+    color: #25d366;
+}
+
+.fab.fa-whatsapp {
+    color: #25d366;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
