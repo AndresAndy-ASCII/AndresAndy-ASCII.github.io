@@ -60,3 +60,65 @@ li a:hover {
     margin-right: 10px;
     font-size: 1.2em;
 }
+
+/* ======================================= */
+/* MEDIA QUERIES PARA RESPONSIVIDAD MÓVIL */
+/* ======================================= */
+
+/* Reglas aplicadas a pantallas de 600px o menos (Móviles) */
+@media (max-width: 600px) {
+    
+    /* 1. Ajustes al Contenedor Principal (directory-container) */
+    .directory-container {
+        /* Eliminar el ancho máximo para que ocupe todo el espacio disponible */
+        max-width: 100%;
+        /* Reducir el margen en los lados para que el contenido se pegue más a los bordes */
+        margin: 10px;
+        /* Reducir el padding interno */
+        padding: 15px;
+    }
+    
+    /* 2. Ajustes al Encabezado (header) */
+    header {
+        /* Reducir el padding superior/inferior del header */
+        padding: 15px 0;
+    }
+
+    header h1 {
+        /* Reducir el tamaño de la fuente para que el título no se desborde */
+        font-size: 1.5em; 
+        padding: 0 10px;
+    }
+
+    /* 3. Ajustes a los Títulos de Sección (h2) */
+    h2 {
+        /* Reducir el tamaño de la fuente de los subtítulos */
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    
+    /* 4. Ajustes a los Elementos de Lista (Enlaces) */
+    .directory-container a {
+        /* Mejorar la legibilidad con un tamaño de fuente ligeramente más pequeño */
+        font-size: 1em;
+        /* Asegurar que el padding sea adecuado para hacer clic fácilmente */
+        padding: 12px;
+        /* Asegurar que el icono y el texto no estén demasiado apretados */
+        display: flex;
+        align-items: center;
+    }
+
+    /* 5. Ajustes al Ícono de WhatsApp */
+    .directory-container a i {
+        /* Asegurar que haya espacio entre el ícono y el nombre */
+        margin-right: 10px;
+        min-width: 20px; /* Asegura el espacio */
+    }
+}
+
+/* Reglas opcionales para pantallas más grandes que 600px pero aún pequeñas (Tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .directory-container {
+        margin: 20px;
+    }
+}
